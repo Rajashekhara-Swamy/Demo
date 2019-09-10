@@ -1,0 +1,17 @@
+<p>uiregister works!</p>
+<h2>Sign in form</h2>
+<form [formGroup]="formdata">
+   User Name:<br>
+   <input type="text" name="emailid"  
+      formControlName="username"><br>
+      <br>
+   
+   password:<br>
+   <input type="password"  name="passwd" formControlName="password">
+   <br/><br>
+   confirm pswd:<br>
+   <input type="password" name="passwd" formControlName="confirmpswd">
+   <br><br>
+   <button (click)="register(formdata.value)">register</button><br>
+   <p>Already have an account?<a [routerLink]="['/uilogin']">login</a></p>
+</form>

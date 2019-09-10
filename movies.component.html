@@ -1,0 +1,13 @@
+
+<form [formGroup]='mov'>
+    Movie Name:<br> 
+    <input type="text" placeholder="enter the name" formControlName='MovieName'>
+    <br>
+    <br>
+    Language:<br>
+    <input type="text" placeholder="enter Language" formControlName='Language'><br><br>
+    Genre:<br>
+    <input type="text"  placeholder="enter gener" formControlName='Genre'><br><br>
+    <button (click)='save(mov.value)'>save</button>
+    <button (click)='cancel(mov.value)'>cancel</button>
+</form>

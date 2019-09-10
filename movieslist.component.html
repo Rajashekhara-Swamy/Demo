@@ -1,0 +1,20 @@
+
+<html>
+    <body>
+        <input type="search" [(ngModel)]="search" placeholder="search" >&nbsp;&nbsp;
+        <button (click)="add()">Add Movies</button> 
+        <table>
+            <tr>
+                <th>MovieName</th>
+                <th>Language</th>
+                <th>Genre</th>
+            </tr>
+            <tr *ngFor='let a of list'>
+                <td>{{a.MovieName}}</td>
+                <td>{{a.Language}}</td>
+                <td>{{a.Genre}}</td>
+            </tr>
+        </table>
+        <button (click)="click1(a)">click</button>
+    </body>
+</html>

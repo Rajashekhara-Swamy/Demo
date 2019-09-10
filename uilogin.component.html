@@ -1,0 +1,17 @@
+
+<p>uilogin works!</p>
+<p>login works!</p>
+<form [formGroup]="sign1">
+    User Name:<br>
+    <input type="text" formControlName="username">
+    <br>
+    <br>
+    password:<br>
+    <input type="text" formControlName="password"><br>
+    <br>
+    <input type="submit" value="Login" (click)="loginuser(sign1.value)"><br><br>
+    <button [routerLink]="['/uiregister']">Register</button>
+    <button [routerLink]="['/movies']">movie details</button>
+
+</form>
+<!-- (ngsubmit)="onClickSubmit(sign.value)"> -->
